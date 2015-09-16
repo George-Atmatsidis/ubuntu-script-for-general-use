@@ -1,7 +1,7 @@
 # unixgadged.bash 
 # Author       : Atmatsidis Giwrgos                                            
 # Released On  : Friday 04 September 2015                                      
-# Version      : 1.0.0  run on terminal only NO GRAPHICS INTERFACE are exist.But on next version 1.0.1 i put                                                       
+# Version      : 1.0.1  run on terminal only NO GRAPHICS INTERFACE are exist.But on next version 1.0.1 i put                                                       
 # Desription   : First of all you must make it executable and run it from Terminal  { /.yourscript.* } (be sure you are on the correct path,where your script are save)
 #                This program greated for use it to cover all your need's.It have the most importand commands for all.
 #                And friendly menu where lead all your action's
