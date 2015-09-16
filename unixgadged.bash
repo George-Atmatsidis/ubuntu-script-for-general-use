@@ -9,7 +9,7 @@
 #                BEWARE the logfilles of script refreshed in every run,and appear ONLY if you select the correct selection.
 #                If you run the same command up to one time the logfiles will keep the out-message that what you run at the first time.(so if you wana compare the logfile with old you must greate a new folder and put old loffiles insite)
 #                Also for your good navicat make a full screen your terminal!! You can use the F11 hotkey
-#
+#		 For any issues contact me on E-mail:: GiwrgosAtmatsidis@live.com 
 # Dependencies : This script greated and tested on Ubuntu operating system,i cant guaranty for sure if that run correct to other operating's system's like Debian.                             
 #                                                                               
 # COPYRIGHT    : This program is free software: you can redistribute it and/or 
@@ -19,7 +19,8 @@
 #                program is distributed in the hope that it will be useful, but
 #                WITHOUT ANY WARRANTY; without even the implied warranty of    
 #                MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the 
-#                GNU General Public License for more details.                  
+#                GNU General Public License for more details. 
+ 
 
 #var
 selection="0"
