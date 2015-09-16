@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # unixgadged.bash 
 # Author       : Atmatsidis Giwrgos                                            
 # Released On  : Friday 04 September 2015                                      
