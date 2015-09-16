@@ -21,7 +21,7 @@
           15. I want to find a file/s and the folder where is are
           16. I want to see what programs are running at the moment and their dependencies 
 
- Desription   : First of all you must make it executable and run it from Terminal  { /.yourscript.* } (be sure you are on the correct path,where your script are save)
+ DESCRIPTION   : First of all you must make it executable and run it from Terminal  { /.yourscript.* } (be sure you   are on the correct path,where your script are save)
                 This program created for use it to cover all your need's.It have the most importand commands for all.
                 And friendly menu where lead all your action's
                 You must create on folder and put script inside,all logfille's from command's will saved separately.
@@ -29,7 +29,7 @@
                 If you run the same command up to one time the logfiles will keep the out-message that what you run at the first time.(so if you wana compare the logfile with old you must create a new folder and put old logfiles inside)
                 Also for your good navication make a full screen your terminal!! You can use the F11 hotkey
 
- Dependencies : This script created and tested on Ubuntu operating system,i cant guaranty for sure if that run correct to other operating's system's like Debian.                             
+ DEPENDECIES : This script created and tested on Ubuntu operating system,i cant guaranty for sure if that run correct to other operating's system's like Debian.                             
                                                                                
  COPYRIGHT    : This program is free software: you can redistribute it and/or 
                 modify it under the terms of the GNU General Public License as
