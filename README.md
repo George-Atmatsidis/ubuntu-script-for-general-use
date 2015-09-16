@@ -1,8 +1,8 @@
-# unixgadged.bash 
-# Author       : Atmatsidis Giwrgos                                            
-# Released On  : Friday 04 September 2015                                      
-# Version      : 1.0.0  
-#               Τhis script have on menu:
+ unixgadged.bash 
+ Author       : Atmatsidis Giwrgos                                            
+ Released On  : Friday 04 September 2015                                      
+ Version      : 1.0.0  
+               Τhis script have on menu:
 ######################################################################################################################
 #          1. Updating - Upgrading
 #          2. I want to  clean the system and also clean the old cores
