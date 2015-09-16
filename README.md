@@ -4,22 +4,22 @@
 # Version      : 1.0.0  
 #               Τhis script have on menu:
 ######################################################################################################################
-#          1. Updating - Upgrading"
-#          2. I want to  clean the system and also clean the old cores"
-#          3. I have a problem then i run those commands on Terminal 'apt-get update' && 'apt-get upgrade'"
-#          4. I want to see the details of my system"
-#          5. I want to see what is the model of the video card and which driver (driver) uses"
-#          6. I want to see information about the network card and driver (driver) that is used"
+#          1. Updating - Upgrading
+#          2. I want to  clean the system and also clean the old cores
+#          3. I have a problem then i run those commands on Terminal 'apt-get update' && 'apt-get upgrade'
+#          4. I want to see the details of my system
+#          5. I want to see what is the model of the video card and which driver (driver) uses
+#          6. I want to see information about the network card and driver (driver) that is used
 #          7. I want to see how much GB has written the disc (Useful for hard disks (eg SSD)"
-#          8. I want to see the number of packets as well as libraries - dependencies of system installed"
+#          8. I want to see the number of packets as well as libraries - dependencies of system installed
 #          9. I want to see the processor CPU information"     
-#          10. I want to see the information of RAM and view the size of memory in gigabyte and viewing Swap in use"
-#          11. I want to see the partitions on my disk for Ubuntu 'swap, home, boot etc; and the space used"  
-#          12. I want to see the information of pci / usb / audio / system drivers devices " 
-#          13. View of TCP / UDP ports" 
-#          14. Show services (services) Computer" 
-#          15. I want to find a file/s and the folder where is are"  
-#          16. I want to see what programs are running at the moment and their dependencies"  
+#          10. I want to see the information of RAM and view the size of memory in gigabyte and viewing Swap in use
+#          11. I want to see the partitions on my disk for Ubuntu 'swap, home, boot etc; and the space used  
+#          12. I want to see the information of pci / usb / audio / system drivers devices 
+#          13. View of TCP / UDP ports
+#          14. Show services (services) Computer
+#          15. I want to find a file/s and the folder where is are
+#          16. I want to see what programs are running at the moment and their dependencies 
 ##################################################################################################################### 
 # Desription   : First of all you must make it executable and run it from Terminal  { /.yourscript.* } (be sure you are on the correct path,where your script are save)
 #                This program created for use it to cover all your need's.It have the most importand commands for all.
