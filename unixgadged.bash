@@ -7,8 +7,8 @@
 #                And friendly menu where lead all your action's
 #                You must greate on folder and put script inside,all logfille's from command's will saved separately.
 #                BEWARE the logfilles of script refreshed in every run,and appear ONLY if you select the correct selection.
-#                If you run the same command up to one time the logfiles will keep the out-message that what you run at the first time.(so if you wana compare the logfile with old you must greate a new folder and put old logfiles inside)
-#                Also for your good navication make a full screen your terminal!! You can use the F11 hotkey
+#                If you run the same command up to one time the logfiles will keep the out-message that what you run at the first time.(so if you wana compare the logfile with old you must greate a new folder and put old loffiles insite)
+#                Also for your good navicat make a full screen your terminal!! You can use the F11 hotkey
 #
 # Dependencies : This script greated and tested on Ubuntu operating system,i cant guaranty for sure if that run correct to other operating's system's like Debian.                             
 #                                                                               
@@ -126,22 +126,22 @@ do #start loop
  if [ "$selection" = "1" ] || [ "$answer" = "1" ] ; then
 #start update
 	  echo "You perform an update and system upgrade">update-upgrate-information # Write on logfile
-    sudo apt-get update #run command
+    sudo apt update #run command
     echo "Please expected as the process record in the file"
     echo "" >>update-upgrate-information
-    echo "### apt-get update output message ###" >>update-upgrate-information
+    echo "### apt update output message ###" >>update-upgrate-information
     echo "" >>update-upgrate-information
     echo "" >>update-upgrate-information
-    sudo apt-get update >>update-upgrate-information #write on logfile the command output
+    sudo apt update >>update-upgrate-information #write on logfile the command output
  #end update 
  ##############  
 #start upgrade
-    sudo apt-get upgrade  #run command
+    sudo apt upgrade  #run command
     echo "Please expected as the process record in the file"
     echo "" >>update-upgrate-information
-    echo "### apt-get upgrade output message ###" >>update-upgrate-information
+    echo "### apt upgrade output message ###" >>update-upgrate-information
     echo "" >>update-upgrate-information
-    sudo apt-get upgrade >>update-upgrate-information
+    sudo apt upgrade >>update-upgrate-information
     echo "" >>update-upgrate-information
     echo "" >>update-upgrate-information
     sudo apt-get autoremove  #run command
@@ -193,9 +193,9 @@ do #start loop
 #start clean terminal Ubuntu
 	echo "You make clean the terminal (~ Terminal ~) Repositories">terminal-fix-information #write on logfile
       sudo rm -rf /var/lib/apt/lists/* #run command
-      sudo apt-get update #run command 
+      sudo apt update #run command 
       sudo dpkg --configure -a #run command 
-      sudo apt-get update #run command
+      sudo apt update #run command
       sudo apt-get install -f #run command       
     echo "">>terminal-fix-information
     echo "" >>terminal-fix-information
@@ -585,7 +585,6 @@ while (("$answer" <= 0 )) || (("$answer" > 16 ))
 done #end of cheak correct entry          
 
 done #end loop
-
 
 
 
