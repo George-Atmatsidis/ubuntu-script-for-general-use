@@ -2,7 +2,7 @@
  
  Author       : Atmatsidis Giwrgos                                            
  Released On  : Friday 04 September 2015                                      
- Version      : 1.0.0  surrent version dont have a graphic environment.The navigation is from terminal
+ Version      : 1.0.1  surrent version dont have a graphic environment.The navigation is from terminal
  
                Τhis script have on menu:
 
