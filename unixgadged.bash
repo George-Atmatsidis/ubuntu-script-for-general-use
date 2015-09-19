@@ -128,22 +128,22 @@ do #start loop
  if [ "$selection" = "1" ] || [ "$answer" = "1" ] ; then
 #start update
 	  echo "You perform an update and system upgrade">update-upgrate-information # Write on logfile
-    sudo apt update #run command
+    sudo apt-get update #run command
     echo "Please expected as the process record in the file"
     echo "" >>update-upgrate-information
     echo "### apt update output message ###" >>update-upgrate-information
     echo "" >>update-upgrate-information
     echo "" >>update-upgrate-information
-    sudo apt update >>update-upgrate-information #write on logfile the command output
+    sudo apt-get update >>update-upgrate-information #write on logfile the command output
  #end update 
  ##############  
 #start upgrade
-    sudo apt upgrade  #run command
+    sudo apt-get upgrade  #run command
     echo "Please expected as the process record in the file"
     echo "" >>update-upgrate-information
     echo "### apt upgrade output message ###" >>update-upgrate-information
     echo "" >>update-upgrate-information
-    sudo apt upgrade >>update-upgrate-information
+    sudo apt-get upgrade >>update-upgrate-information
     echo "" >>update-upgrate-information
     echo "" >>update-upgrate-information
     sudo apt-get autoremove  #run command
