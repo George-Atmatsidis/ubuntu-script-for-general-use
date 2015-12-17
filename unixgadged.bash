@@ -2,16 +2,16 @@
 # unixgadged.bash 
 # Author       : Atmatsidis Giwrgos                                            
 # Released On  : Friday 04 September 2015                                      
-# Version      : 1.0.1  run on terminal only NO GRAPHICS INTERFACE are exist.But on next version 1.0.5 i put                                                       
+# Version      : 1.0.1  run on terminal only NO GRAPHICS INTERFACE exists. But on next version 1.0.5 will be added                                                       
 # Desription   : First of all you must make it executable and run it from Terminal  { /.yourscript.* } (be sure you are on the correct path,where your script are save)
-#                This program greated for use it to cover all your need's.It have the most importand commands for all.
-#                And friendly menu where lead all your action's
-#                You must greate on folder and put script inside,all logfille's from command's will saved separately.
+#                This program greated for use it to cover all your need's. It has the most important commands for all.
+#                And friendly menu where leads all your action's
+#                You must create on folder and put script inside, all logfille's from command's will saved separately.
 #                BEWARE the logfilles of script refreshed in every run,and appear ONLY if you select the correct selection.
 #                If you run the same command up to one time the logfiles will keep the out-message that what you run at the first time.(so if you wana compare the logfile with old you must greate a new folder and put old loffiles insite)
 #                Also for your good navicat make a full screen your terminal!! You can use the F11 hotkey
 #		 For any issues contact me on E-mail:: GiwrgosAtmatsidis@live.com 
-# Dependencies : This script greated and tested on Ubuntu operating system,i cant guaranty for sure if that run correct to other operating's system's like Debian.                             
+# Dependencies : This script was created and tested on Ubuntu operating system,i cant guaranty for sure if that run correct to other operating's system's like Debian.                             
 #                                                                               
 # COPYRIGHT    : This program is free software: you can redistribute it and/or 
 #                modify it under the terms of the GNU General Public License as
