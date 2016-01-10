@@ -276,7 +276,7 @@ else
 else
  if [ "$selection" = "11" ] || [ "$answer" = "11" ] ; then  
 #partition information
-    sudo df -HT>partions-information
+    sudo df -HT>partitions-information
     sel11="11"
     clear  
 #partition information   
