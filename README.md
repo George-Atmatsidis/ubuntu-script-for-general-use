@@ -28,10 +28,10 @@
                 And friendly menu where lead all your action's
                 You must create on folder and put script inside,all logfille's from command's will saved separately.
                 BEWARE the logfilles of script refreshed in every run,and appear ONLY if you select the correct selection.
-                If you run the same command up to one time the logfiles will keep the out-message that what you run at the first time.(so if you want to compare the logfile with the old ones you must create a new folder and put old logfiles inside)
-                Also, in case you want a good navigation make a full screen your terminal!! You can use the F11 hotkey
+                If you run the same command up to one time the logfiles will keep the out-message that what you run at the first time.(so if you wana compare the logfile with old you must create a new folder and put old logfiles inside)
+                Also for your good navication make a full screen your terminal!! You can use the F11 hotkey
 
- DEPENDECIES : This script created and tested on Ubuntu operating system. I can not guarantee for sure if it will run  correctly on other operating systems, like Debian.                             
+ DEPENDECIES : This script created and tested on Ubuntu operating system,i cant guaranty for sure if that run correct to other operating's system's like Debian.                             
                                                                                
  COPYRIGHT    : This program is free software: you can redistribute it and/or 
                 modify it under the terms of the GNU General Public License as
