@@ -139,7 +139,7 @@ do #start loop
  #end update 
  ##############  
 #start upgrade
-    sudo apt-get upgrade  #run command
+    sudo apt-get -y upgrade  #run command
     echo "Please expected as the process record in the file"
     echo "" >>update-upgrate-information
     echo "### apt upgrade output message ###" >>update-upgrate-information
