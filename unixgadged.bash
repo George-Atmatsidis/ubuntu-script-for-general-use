@@ -63,14 +63,12 @@ boolean=""
  echo "" 
  echo "   16. I want to see what programs are running at the moment and their dependencies"  
  echo ""
- echo "   17. I want to remove repositories (manual)"
- echo "" 
  echo "   0.Exit" 
  echo " Click on your choice below"
   read selection
  #cheak for correct entry 
  
-while (("$selection" <= 0 )) || (("$selection" > 17 ))
+while (("$selection" <= 0 )) || (("$selection" > 16 ))
  do
   
   if [ "$selection" = "0" ] ; then
