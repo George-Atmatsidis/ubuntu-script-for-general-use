@@ -66,7 +66,7 @@ boolean=""
  echo "   0.Exit" 
  echo " Click on your choice below"
   read selection
- #cheak for correct entry 
+ #check for correct entry 
  
 while (("$selection" <= 0 )) || (("$selection" > 16 ))
  do
@@ -113,7 +113,7 @@ while (("$selection" <= 0 )) || (("$selection" > 16 ))
  echo "   0.Exit" 
  echo " Click on your choice below"
        read selection   
-done #end of cheak correct entry
+done #end of check correct entry
 #create logfile for file-'s path
  if [ "$selection" = "15" ] ; then
     echo "">file-path-information
@@ -351,9 +351,9 @@ read fipath
     sel15="15"
   echo ""
   echo "  If you want to look for some other file, press the 1 below or any other key to exit"
-   read cheak
+   read check
    clear
-while [ "$cheak" = "1" ] 
+while [ "$check" = "1" ] 
 do
   echo "  Below enter a file name to search"
     read fipath
@@ -364,7 +364,7 @@ do
     echo"">>file-path-information
     echo ""
     echo "  If you want to look for some other file, press the 1 below or any other key to exit"
-       read cheak
+       read check
 done ##
 #file road information
 else
@@ -395,7 +395,7 @@ else
  #########
  
  selection="" #kill that var for not issues exist
- #cheak what done;
+ #check what done;
  if [ "$sel1" = "1" ] ; then 
     hxo1="    1. Updating - Upgrading [EXECUTED open the logfile]" 
   else
@@ -493,7 +493,7 @@ else
   fi    
     clear 
     
- #end of cheak what done;   
+ #end of check what done;   
  echo "" 
  echo "" 
  echo "Select whether you want to do something else[press the button of your choice]"
@@ -534,7 +534,7 @@ else
  echo ""
  echo "Click on your choice below if you want to continue or 0 to exit"
   read answer
-  #cheak for correct entry 
+  #check for correct entry 
  
 while (("$answer" <= 0 )) || (("$answer" > 16 ))
  do
@@ -581,7 +581,7 @@ while (("$answer" <= 0 )) || (("$answer" > 16 ))
        echo ""
        echo "Click on your choice below if you want to continue or 0 to exit"
         read answer
-done #end of cheak correct entry          
+done #end of check correct entry          
 
 done #end loop
 
