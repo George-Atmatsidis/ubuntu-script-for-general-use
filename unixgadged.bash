@@ -2,16 +2,16 @@
 # unixgadged.bash 
 # Author       : Atmatsidis Giwrgos                                            
 # Released On  : Friday 04 September 2015                                      
-# Version      : 1.0.1  run on terminal only NO GRAPHICS INTERFACE are exist.But on next version 1.0.5 i put                                                       
-# Desription   : First of all you must make it executable and run it from Terminal  { /.yourscript.* } (be sure you are on the correct path, that is where your script is saved)
-#                This program was created for use and it covers almost all your need's. It has the most importand commands for all.
+# Version      : 1.0.0                                                         
+# Desription   : First of all you must make it executable and run it from Terminal  { /.yourscript.* } (be sure you are on the correct path,where your script are save)
+#                This program greated for use it to cover all your need's.It have the most importand commands for all.
 #                And friendly menu where lead all your action's
-#                You must create a folder and put the script inside, all logfille's from command's will be saved separately.
-#                BEWARE the logfilles of script are refreshed every time you run it,and appear ONLY if you select the correct selection.
-#                If you run the same command up to one time the logfiles will keep the out-message that what you run at the first time.(so if you want to compare the logfile with your old one you must create a new folder and put old loffiles inside)
+#                You must greate on folder and put script inside,all logfille's from command's will saved separately.
+#                BEWARE the logfilles of script refreshed in every run,and appear ONLY if you select the correct selection.
+#                If you run the same command up to one time the logfiles will keep the out-message that what you run at the first time.(so if you wana compare the logfile with old you must greate a new folder and put old loffiles insite)
 #                Also for your good navicat make a full screen your terminal!! You can use the F11 hotkey
-#		 For any issues contact me on E-mail:: GiwrgosAtmatsidis@live.com 
-# Dependencies : This script was created and tested on Ubuntu operating system, though I can not guaranty for sure if that runs correctly on other operating's system's like Debian.                             
+#
+# Dependencies : This script greated and tested on Ubuntu operating system,i cant guaranty for sure if that run correct to other operating's system's like Debian.                             
 #                                                                               
 # COPYRIGHT    : This program is free software: you can redistribute it and/or 
 #                modify it under the terms of the GNU General Public License as
@@ -20,8 +20,7 @@
 #                program is distributed in the hope that it will be useful, but
 #                WITHOUT ANY WARRANTY; without even the implied warranty of    
 #                MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the 
-#                GNU General Public License for more details. 
- 
+#                GNU General Public License for more details.                  
 
 #var
 selection="0"
@@ -63,13 +62,15 @@ boolean=""
  echo "   15. I want to find a file/s and the folder where is are"  
  echo "" 
  echo "   16. I want to see what programs are running at the moment and their dependencies"  
+ echo ""
+ echo "   17. I want to remove repositories (manual)"
  echo "" 
  echo "   0.Exit" 
  echo " Click on your choice below"
   read selection
- #check for correct entry 
+ #cheak for correct entry 
  
-while (("$selection" <= 0 )) || (("$selection" > 16 ))
+while (("$selection" <= 0 )) || (("$selection" > 17 ))
  do
   
   if [ "$selection" = "0" ] ; then
@@ -114,7 +115,7 @@ while (("$selection" <= 0 )) || (("$selection" > 16 ))
  echo "   0.Exit" 
  echo " Click on your choice below"
        read selection   
-done #end of check correct entry
+done #end of cheak correct entry
 #create logfile for file-'s path
  if [ "$selection" = "15" ] ; then
     echo "">file-path-information
@@ -143,10 +144,10 @@ do #start loop
     echo "" >>update-upgrate-information
     echo "### apt upgrade output message ###" >>update-upgrate-information
     echo "" >>update-upgrate-information
-    sudo apt-get upgrade >>update-upgrate-information
+    sudo apt-get -y upgrade >>update-upgrate-information
     echo "" >>update-upgrate-information
     echo "" >>update-upgrate-information
-    sudo apt-get autoremove  #run command
+    sudo apt-get -y autoremove  #run command
     echo "Please expected as the process record in the file"
     echo "" >>update-upgrate-information
     echo "### apt-get autoremove output message ###" >>update-upgrate-information
@@ -158,11 +159,11 @@ do #start loop
     if [ "$selection" = "2" ] || [ "$answer" = "2" ] ; then
 #start clean Ubuntu
 	  echo "You make clean the system and the old cores">clean-information # Write on logfile
-    sudo apt-get --purge autoremove #run command
-    sudo apt-get autoremove  #run command
-    sudo apt-get autoclean  #run command
-    sudo apt-get clean  #run command
-    sudo apt-get purge $(dpkg -l | awk '/^rc/ { print $2 }') #run command
+    sudo apt-get --purge -y autoremove #run command
+    sudo apt-get -y autoremove  #run command
+    sudo apt-get -y autoclean  #run command
+    sudo apt-get -y clean  #run command
+    sudo apt-get -y purge $(dpkg -l | awk '/^rc/ { print $2 }') #run command
     echo "The youngest core in use is the following:" && uname -rm #run command
     echo "Please expected as the process record in the file"
     echo "" >>clean-information
@@ -195,9 +196,9 @@ do #start loop
 #start clean terminal Ubuntu
 	echo "You make clean the terminal (~ Terminal ~) Repositories">terminal-fix-information #write on logfile
       sudo rm -rf /var/lib/apt/lists/* #run command
-      sudo apt update #run command 
+      sudo apt-get update #run command 
       sudo dpkg --configure -a #run command 
-      sudo apt update #run command
+      sudo apt-get update #run command
       sudo apt-get install -f #run command       
     echo "">>terminal-fix-information
     echo "" >>terminal-fix-information
@@ -276,7 +277,7 @@ else
 else
  if [ "$selection" = "11" ] || [ "$answer" = "11" ] ; then  
 #partition information
-    sudo df -HT>partitions-information
+    sudo df -HT>partions-information
     sel11="11"
     clear  
 #partition information   
@@ -352,9 +353,9 @@ read fipath
     sel15="15"
   echo ""
   echo "  If you want to look for some other file, press the 1 below or any other key to exit"
-   read check
+   read cheak
    clear
-while [ "$check" = "1" ] 
+while [ "$cheak" = "1" ] 
 do
   echo "  Below enter a file name to search"
     read fipath
@@ -365,7 +366,7 @@ do
     echo"">>file-path-information
     echo ""
     echo "  If you want to look for some other file, press the 1 below or any other key to exit"
-       read check
+       read cheak
 done ##
 #file road information
 else
@@ -375,8 +376,6 @@ else
     sel16="16"
     clear  
 #realtime programm running information
-
-  
 
 ##########     
  fi #1
@@ -398,7 +397,7 @@ else
  #########
  
  selection="" #kill that var for not issues exist
- #check what done;
+ #cheak what done;
  if [ "$sel1" = "1" ] ; then 
     hxo1="    1. Updating - Upgrading [EXECUTED open the logfile]" 
   else
@@ -496,7 +495,7 @@ else
   fi    
     clear 
     
- #end of check what done;   
+ #end of cheak what done;   
  echo "" 
  echo "" 
  echo "Select whether you want to do something else[press the button of your choice]"
@@ -537,7 +536,7 @@ else
  echo ""
  echo "Click on your choice below if you want to continue or 0 to exit"
   read answer
-  #check for correct entry 
+  #cheak for correct entry 
  
 while (("$answer" <= 0 )) || (("$answer" > 16 ))
  do
@@ -584,9 +583,10 @@ while (("$answer" <= 0 )) || (("$answer" > 16 ))
        echo ""
        echo "Click on your choice below if you want to continue or 0 to exit"
         read answer
-done #end of check correct entry          
+done #end of cheak correct entry          
 
 done #end loop
+
 
 
 
