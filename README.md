@@ -55,6 +55,16 @@ Then you can run it by invoking:
 ## Dependencies 
 
 This script was created and tested on Ubuntu operating system. I can't any promise that it will operate safely on other operating systems such as Debian.                             
+## Using crontab
+Open terminal and type crontab -l, and select your editor.
+Copy&paste the following to make your updater run every week.
+@weekly and the fullpath from your UpdateCleanLinux.bash file
+Save and close the editor.
+
+TIP: Crontab wont ask you the sudo password. Since the script Require SUDO Permissions we need to overide.
+Copy and paste the following line in the /etc/sudoers file (sudo nano /etc/sudoers)
+*Your_User_Name* ALL=(root) NOPASSWD: Paste the fullpath of your UpdateCleanLinux.bash file
+*you can get your username via terminal usign echo $USER command
 
 ## Copyright 
 
